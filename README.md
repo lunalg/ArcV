@@ -2,6 +2,7 @@
 Contains a solution for creation and manipulation of wind-related classes, including towers, sensors and measurements
 
 1) Proposal of a C# class/struct architecture design that hold all metadata and data for wind speed and wind direction sensors on a met tower.
+
 Three classes were proposed:
 •	Area – can contain a list of towers
 •	MetTower – is associated to an area and can contain sensors
@@ -15,8 +16,8 @@ whereas measurements do not have default instantiation and should carry paramete
 •	In case parameters are provided in the instantiation of Area(), MetTower() or Sensor(), a check is made to make sure 
 there are no objects with the provided ID. If ID is not yet existent, object is created and added to its respective global list.
 These lists were designed just for the exercise purpose, but in real life, this process would be part of an API interface to a database.
-
-2)	Proposal of functions in C# that calculates and returns the average wind speed over a specified time period. 
+   
+2) Proposal of functions in C# that calculates and returns the average wind speed over a specified time period. 
 
 Three functions were created to take average speed:
 
